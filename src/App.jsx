@@ -1,5 +1,5 @@
 // src/App.jsx
-import { AppBar, Toolbar, Typography, Box, Container } from '@mui/material'
+import { AppBar, Toolbar, Typography, Box, Container, Rating } from '@mui/material'
 import ThemeToggle from './components/ThemeToggle'
 import SendIcon from '@mui/icons-material/Send'
 import BasicButtons from './samples/Buttons'
@@ -16,6 +16,10 @@ import RadioButtonsGroup from './samples/RadioButtons'
 import ErrorRadios from './samples/ErrorRadios'
 import BoxShowcase from './assets/BoxShowcase'
 import FlexboxShowcase from './assets/FlexboxShowcase'
+import GridShowcase from './assets/GridShowcase'
+import Dashboard from './components/Dashboard'
+import BasicRating from './samples/RatingComp'
+import RadioGroupRating from './samples/RatingFaces'
 
 function App() {
   return (
@@ -60,7 +64,12 @@ function App() {
       {/* <ErrorRadios /> */}
 
       {/* <BoxShowcase /> */}
-      <FlexboxShowcase />
+      {/* <FlexboxShowcase /> */}
+      {/* <GridShowcase /> */}
+      {/* <Dashboard /> */}
+
+      <BasicRating />
+      <RadioGroupRating />
     </Box>
   )
 }
