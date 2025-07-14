@@ -12,13 +12,17 @@ import ButtonShowcase from './assets/ButtonShowcase';
 import FloatingActionButtons from './samples/ActionFloatingButton';
 import FloatingActionButtonZoom from './samples/FloatingButtonAnime';
 import AppButton from './components/AppButton';
+import RadioButtonsGroup from './samples/RadioButtons'
+import ErrorRadios from './samples/ErrorRadios'
+import BoxShowcase from './assets/BoxShowcase'
+import FlexboxShowcase from './assets/FlexboxShowcase'
 
 function App() {
   return (
     <Box>
       <AppBar position="static" color="primary">
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>MUI Theming Example</Typography>
+          <Typography variant="h6" sx={{ flexGrow: 1 }}>MUI Learning Example</Typography>
           <ThemeToggle />
         </Toolbar>
       </AppBar>
@@ -33,7 +37,7 @@ function App() {
       {/* <Checkboxes /> */}
       {/* <Divider sx={{ my: 3 }} /> */}
 
-      <ButtonShowcase />
+      {/* <ButtonShowcase /> */}
       {/* <Divider sx={{ my: 3 }} /> */}
       {/* <FloatingActionButtons /> */}
       {/* <FloatingActionButtonZoom /> */}
@@ -51,6 +55,12 @@ function App() {
       <AppButton variant="outlined" onClick={() => alert('Clicked')}>
         Outlined Action
       </AppButton> */}
+
+      {/* <RadioButtonsGroup /> */}
+      {/* <ErrorRadios /> */}
+
+      {/* <BoxShowcase /> */}
+      <FlexboxShowcase />
     </Box>
   )
 }
