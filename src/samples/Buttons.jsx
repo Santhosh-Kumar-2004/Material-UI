@@ -6,11 +6,26 @@ import SendIcon from '@mui/icons-material/Send';
 import AlarmIcon from '@mui/icons-material/Alarm';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import IconButton from '@mui/material/IconButton';
+import Fingerprint from '@mui/icons-material/Fingerprint';
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import { styled } from '@mui/material/styles';
+
+const VisuallyHiddenInput = styled('input')({
+  clip: 'rect(0 0 0 0)',
+  clipPath: 'inset(50%)',
+  height: 1,
+  overflow: 'hidden',
+  position: 'absolute',
+  bottom: 0,
+  left: 0,
+  whiteSpace: 'nowrap',
+  width: 1,
+});
 
 export default function BasicButtons() {
     return (
         <>
-            <Stack spacing={2} direction="row">
+            <Stack spacing={2} direction="row" mb={2}>
                 <Button variant="text">Text</Button>
                 <Button variant="contained">Contained</Button>
                 <Button variant="outlined">Outlined</Button>
@@ -40,6 +55,24 @@ export default function BasicButtons() {
                 <IconButton color="primary" aria-label="add to shopping cart">
                     <AddShoppingCartIcon />
                 </IconButton>
+                <IconButton aria-label="fingerprint" color="success">
+                    <Fingerprint />
+                </IconButton>
+
+                <Button
+                    component="label"
+                    role={undefined}
+                    variant="contained"
+                    tabIndex={-1}
+                    startIcon={<CloudUploadIcon />}
+                >
+                    Upload files
+                    <VisuallyHiddenInput
+                        type="file"
+                        onChange={(event) => console.log(event.target.files)}
+                        multiple
+                    />
+                </Button>
             </Stack>
 
         </>

@@ -2,8 +2,10 @@
 import { AppBar, Toolbar, Typography, Box, Container } from '@mui/material'
 import ThemeToggle from './components/ThemeToggle'
 import BasicButtons from './samples/Buttons'
-import TypographyShowcase from './components/TypographyShowcase'
+import TypographyShowcase from './assets/TypoGraphy/TypographyShowcase'
 import Divider from '@mui/material/Divider';
+import Header from './components/Header';
+import ThemeSXExample from './assets/TypoGraphy/ThemeSXExample';
 
 function App() {
   return (
@@ -15,12 +17,13 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      <Typography variant='h2' mt={5} mb={3}>Buttons Showcase</Typography>
+      {/* <Typography variant='h2' mt={5} mb={3}>Buttons Showcase</Typography>
       <BasicButtons />
-      <Divider sx={{ my: 3 }} />
+      <Divider sx={{ my: 3 }} /> */}
 
-      <TypographyShowcase />
-      
+      {/* <TypographyShowcase /> */}
+      <Header />
+      <ThemeSXExample />
     </Box>
   )
 }
