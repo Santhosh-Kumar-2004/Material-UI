@@ -7,6 +7,10 @@ import Divider from '@mui/material/Divider';
 import Header from './components/Header';
 import ThemeSXExample from './assets/TypoGraphy/ThemeSXExample';
 import Checkboxes from './samples/CheckBoxes';
+import ButtonShowcase from './assets/ButtonShowcase';
+import FloatingActionButtons from './samples/ActionFloatingButton';
+import FloatingActionButtonZoom from './samples/FloatingButtonAnime';
+import AppButton from './components/AppButton';
 
 function App() {
   return (
@@ -25,7 +29,15 @@ function App() {
       {/* <TypographyShowcase /> */}
       {/* <Header /> */}
       {/* <ThemeSXExample /> */}
-      <Checkboxes />
+      {/* <Checkboxes /> */}
+      {/* <Divider sx={{ my: 3 }} /> */}
+
+      <ButtonShowcase />
+      {/* <Divider sx={{ my: 3 }} /> */}
+      {/* <FloatingActionButtons /> */}
+      {/* <FloatingActionButtonZoom /> */}
+
+      <AppButton />
     </Box>
   )
 }
