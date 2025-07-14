@@ -1,6 +1,7 @@
 // src/App.jsx
 import { AppBar, Toolbar, Typography, Box, Container } from '@mui/material'
 import ThemeToggle from './components/ThemeToggle'
+import SendIcon from '@mui/icons-material/Send'
 import BasicButtons from './samples/Buttons'
 import TypographyShowcase from './assets/TypoGraphy/TypographyShowcase'
 import Divider from '@mui/material/Divider';
@@ -37,7 +38,19 @@ function App() {
       {/* <FloatingActionButtons /> */}
       {/* <FloatingActionButtonZoom /> */}
 
-      <AppButton />
+      {/* <AppButton /> */}
+
+      {/* <AppButton icon={<SendIcon />} color="secondary">
+        Send Message
+      </AppButton>
+
+      <AppButton loading>
+        Submitting...
+      </AppButton>
+
+      <AppButton variant="outlined" onClick={() => alert('Clicked')}>
+        Outlined Action
+      </AppButton> */}
     </Box>
   )
 }
