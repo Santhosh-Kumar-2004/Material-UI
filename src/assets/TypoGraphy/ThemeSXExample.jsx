@@ -8,7 +8,7 @@ const ThemeSXExample = () => {
       </Typography>
 
       <Paper
-        elevation={3}
+        elevation={0}
         sx={{
           p: 3,
           backgroundColor: 'background.paper',

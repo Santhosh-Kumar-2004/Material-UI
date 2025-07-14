@@ -6,6 +6,7 @@ import TypographyShowcase from './assets/TypoGraphy/TypographyShowcase'
 import Divider from '@mui/material/Divider';
 import Header from './components/Header';
 import ThemeSXExample from './assets/TypoGraphy/ThemeSXExample';
+import Checkboxes from './samples/CheckBoxes';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
       <Divider sx={{ my: 3 }} /> */}
 
       {/* <TypographyShowcase /> */}
-      <Header />
-      <ThemeSXExample />
+      {/* <Header /> */}
+      {/* <ThemeSXExample /> */}
+      <Checkboxes />
     </Box>
   )
 }
